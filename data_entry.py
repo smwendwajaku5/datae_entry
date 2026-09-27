@@ -5,8 +5,6 @@ import os
 import pyodbc
 
 
-# These settings point to the local SQL Server Express instance installed on Windows.
-# Environment variables can override these values without editing this file.
 SQL_SERVER = os.getenv("DATA_ENTRY_SQL_SERVER", r"localhost\SQLEXPRESS")
 SQL_DATABASE = os.getenv("DATA_ENTRY_SQL_DATABASE", "DataEntryDB")
 SQL_USERNAME = os.getenv("DATA_ENTRY_SQL_USERNAME", "")
